@@ -22,7 +22,7 @@ function displayData(){
                         <td>${data.exp}</td>
 
                         <td>
-                            <a href="../pages/edit.html?id=${data.empId}"><button id="edit">Edit</button></a>
+                            <a href="./pages/edit.html?id=${data.empId}"><button id="edit">Edit</button></a>
                             <button id="del" onclick="deleteDetails(${data.empId})">Delete</button>
                         </td>
                     </tr>`
