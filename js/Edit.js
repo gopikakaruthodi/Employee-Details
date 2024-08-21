@@ -10,11 +10,7 @@ function displayDetails(){
   str=``
 
 
-  str+=`<tr>
-                    <th>ID</th>
-                    <td><input type="text" id="input1" value="${data.empId}" readonly ></td>
-                </tr>
-                <tr>
+  str+=`        <tr>
                     <th>Name</th>
                     <td><input type="text" id="input2" value="${data.name}" required></td>
                 </tr>
@@ -61,7 +57,7 @@ displayDetails()
 
 function editDetails(id){
     let ob={}
-   ob.empId=document.getElementById("input1").value
+   ob.empId=id
    ob.name=document.getElementById("input2").value
    ob.des=document.getElementById("input3").value
    ob.sal=document.getElementById("input4").value
